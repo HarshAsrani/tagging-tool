@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagging and Labelling Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tagging and Labelling Tool</h1>
+        <div class="upload-section">
+            <input type="file" id="htmlFile" accept=".html">
+            <label for="htmlFile" class="upload-button">Upload HTML File</label>
+        </div>
+        <div class="upload-section">
+            <input type="file" id="tagsJsonFile" accept=".json">
+            <label for="tagsJsonFile" class="upload-button">Upload Tags JSON File</label>
+        </div>
+        <div class="upload-section">
+            <input type="file" id="tagsMarkupMnAFile" accept=".csv">
+            <label for="tagsMarkupMnAFile" class="upload-button">Upload MarkupMnA File</label>
+        </div>
+        <button id="downloadJson" class="download-button">Download Modified Tags JSON</button>
+        <!-- Buttons for tagging, completing tags, saving, and erasing all -->
+        <button id="taggingButton" class="action-button">Tagging</button>
+        <button id="completeTagsButton" class="action-button">Complete Tags</button>
+        <button id="saveButton" class="action-button">Save</button>
+        <button id="eraseAllButton" class="action-button">Erase All</button>
+    </div>
+    <div id="htmlDisplay" class="html-display"></div>
+    <script src="script2.js"></script>
+</body>
+</html>
